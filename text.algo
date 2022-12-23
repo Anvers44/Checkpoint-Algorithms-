@@ -1,0 +1,19 @@
+ALGORITHM algorithm_String
+VAR
+    str:STRING:="Bonjour le monde."
+    i:INTEGER:=0
+    len:INTEGER:=0
+    nm:INTEGER:=0
+    nv:INTEGER:=0
+BEGIN
+    WHILE (str[i]<>".") DO
+        len:=len+1;
+        IF (str[i]=" ") THEN
+            nm:=nm+1;
+        END_IF
+        IF (str[i]= "a"or"e"or"i"or"o"or "u" or"y") THEN
+            nv:=nv+1;
+        END_IF
+        i:=i+1;
+    END_WHILE
+END
